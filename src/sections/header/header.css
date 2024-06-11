@@ -1,0 +1,70 @@
+header {
+    margin-top: 5rem;
+    height: calc(100vh - 5rem);
+    display: grid;
+    align-items: center;
+    background: var(--color-white);
+    transition: var(--transition);
+}
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem; /* Add some padding for spacing */
+}
+
+.header__profile {
+    width: 20rem;
+    height: 24rem;
+    border-radius: 9rem 9rem 2rem 2rem;
+    overflow: hidden;
+    margin-left: 1.5rem; /* Adjust margin to create space */
+}
+
+.header_proftxt {
+    font-size: 3rem;
+    text-align: left; /* Align text to the left */
+    margin-right: 1rem; /* Adjust margin for spacing */
+}
+
+#element {
+    color: rgb(140, 170, 198);
+    font-size: 2rem;
+    text-align: left; /* Align text to the left */
+    margin-right: 1rem; /* Adjust margin for spacing */
+}
+
+.header__socials {
+    display: flex;
+    gap: 1.4rem;
+    flex-direction: row;
+    position: absolute;
+    margin-left: 14rem;
+    margin-top: 14rem;
+}
+
+.header__socials a {
+    width: 1.8rem;
+    aspect-ratio: 1/1;
+    background: var(--color-light);
+    color: var(--color-black);
+    display: grid;
+    place-items: center;
+    border-radius: var(--border-radius-3);
+}
+
+.header__socials a:hover {
+    background: rgb(18, 18, 62);
+    color: var(--color-white);
+    transform: translateX(-0.5rem);
+}
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 1024px) {
+    header {
+        margin-top: 0;
+        height: 100vh;
+    }
+}
