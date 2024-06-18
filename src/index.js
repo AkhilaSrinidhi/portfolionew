@@ -4,3 +4,6 @@ import './index.css'
 
 const root= ReactDOM.createRoot(document.querySelector('#root'));
 root.render(<App/>);
+
+
+/*Deploy: package.json: npm run build-deploy */
